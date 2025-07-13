@@ -174,11 +174,23 @@ body::-webkit-scrollbar {
 /** Animation Skills */
 
 .op {
-    transition: opacity 1s ease;
-    opacity: 100%;
+    transition: opacity 0.4s ease;
+    opacity: 0%;
+    /* z-index: 25; */
 }
 
 .rop {
-    transition: opacity 1s ease;
-    opacity: 0%;
+    transition: opacity 0.4s ease;
+    opacity: 100%;
+    /* z-index: 26; */
 }
+
+.cooltr {
+    
+}
+
+
+
+/* .spoon:hover.ncooltr {
+    z-index: 26
+} */
