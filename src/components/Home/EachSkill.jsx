@@ -12,15 +12,15 @@ function EachSkill({SkillImage, SkillImageMono}) {
         if (HoverState === 1)
         {
             Opacity.current.classList.add('rop')
-            Opacity.current.classList.remove('op')
+            Opacity.current.classList.remove('oop')
             InverseOpacity.current.classList.add('op')
-            InverseOpacity.current.classList.remove('rop')
+            InverseOpacity.current.classList.remove('roop')
         }
         else if (HoverState === 0)
         {
-            Opacity.current.classList.add('op')
+            Opacity.current.classList.add('oop')
             Opacity.current.classList.remove('rop')
-            InverseOpacity.current.classList.add('rop')
+            InverseOpacity.current.classList.add('roop')
             InverseOpacity.current.classList.remove('op')
         }
         

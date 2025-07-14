@@ -174,15 +174,47 @@ body::-webkit-scrollbar {
 /** Animation Skills */
 
 .op {
-    transition: opacity 0.4s ease;
+    transition: opacity 0.1s ease;
     opacity: 0%;
     /* z-index: 25; */
 }
 
 .rop {
-    transition: opacity 0.4s ease;
+    transition: opacity 0.1s ease;
     opacity: 100%;
     /* z-index: 26; */
+}
+
+.oop {
+    /* transition: opacity 0.9s ease 1s; */
+    animation: fadeout 1.3s ease 0s forwards;
+    opacity: 0%;
+    /* z-index: 25; */
+}
+
+.roop {
+    /* transition: opacity 0.9s ease 1s; */
+    animation: fadein 1.3s ease 0s forwards;
+    opacity: 100%;
+    /* z-index: 26; */
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 .cooltr {
