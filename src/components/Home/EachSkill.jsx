@@ -30,7 +30,7 @@ function EachSkill({SkillImage, SkillImageMono}) {
 
     return (
         <>
-            <div className="w-full h-full border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl flex flex-col items-center justify-center" onMouseEnter={() => SetHoverState(1)} onMouseLeave={() => SetHoverState(0)} >
+            <div className="sm:w-full h-full border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl flex flex-col items-center justify-center" onMouseEnter={() => SetHoverState(1)} onMouseLeave={() => SetHoverState(0)} >
                 <div className='w-full relative h-full flex items-center justify-center'>
                     <div className='relative w-full h-full spoon transform flex justify-center items-center' >
                         <img ref={Opacity} className='absolute rop w-full h-full p-2' src={SkillImage} alt="" />
