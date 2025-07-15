@@ -38,8 +38,8 @@ function SkillsHome() {
         <>
             <div className="flex justify-center items-center h-full lg:h-screen my-14 sm:h-full">
                 <div className="grid grid-rows-5 grid-cols-2 lg:grid-cols-6 sm:grid-cols-3 lg:gap-4 gap-2 sm:gap-4 sm:w-[580px] lg:w-auto">
-                    <div className="flex justify-center lg:block lg:pl-2 md:pl-0 min-w-36 sm:min-w-41.5 min-h-[120px] sm:min-h-[124.5px] lg:min-h-[120px] lg:min-w-38 xl:h-[124.5px] xl:min-w-41.5 lg:row-span-2 lg:col-span-4 sm:col-span-3 col-span-2">
-                        <div className="leading-none font-primary xl:text-[160px] lg:text-[150px] md:text-[150px]">SKILLS</div>
+                    <div className="flex justify-center mt-[-44px] lg:block lg:pl-2 md:pl-0 min-w-36 sm:min-w-41.5 min-h-[120px] sm:min-h-[124.5px] lg:min-h-[120px] lg:min-w-38 xl:h-[124.5px] xl:min-w-41.5 lg:row-span-2 lg:col-span-4 sm:col-span-3 col-span-2">
+                        <div className="leading-none font-primary xl:text-[160px] sm:text-[160px] text-[85px] pb-[-12px] pt-9 sm:pt-0">SKILLS</div>
                         <div className="leading-none font-primary xl:text-8xl lg:text-[88px] hidden">{Selected}</div>
                     </div>
                     <div onMouseEnter={() => SetSelected("GITHUB")} className="min-w-36 sm:min-w-41.5 min-h-[120px] sm:min-h-[124.5px] lg:min-h-[120px] lg:min-w-38 xl:min-h-[124.5px] xl:min-w-41.5 lg:block lg:col-span-1 lg:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Github} SkillImageMono={GithubMono} /></div>
