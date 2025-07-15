@@ -32,23 +32,38 @@ import HTMLMono from '../../assets/Home/Skills/HTML-1.svg'
 function SkillsHome() {
     return (
         <>
-            <div className="flex justify-center items-center h-screen my-14">
-                <div className="grid grid-rows-5 grid-cols-6 gap-4">
-                    <div className="min-w-41.5 min-h-[124.5px] row-span-2 col-span-4"></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Github} SkillImageMono={GithubMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Git} SkillImageMono={GitMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Figma} SkillImageMono={FigmaMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px] row-span-2"><EachSkill SkillImage={Python} SkillImageMono={PythonMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Cs} SkillImageMono={CsMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px] row-span-2 col-span-2"><EachSkill SkillImage={Unity} SkillImageMono={UnityMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px] row-span-2 col-span-2"><EachSkill SkillImage={React} SkillImageMono={ReactMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Cpp} SkillImageMono={CppMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Css} SkillImageMono={CssMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={C} SkillImageMono={CMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px] col-span-2"><EachSkill SkillImage={Tailwind} SkillImageMono={TailwindMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Js} SkillImageMono={JsMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={Ts} SkillImageMono={TsMono} /></div>
-                    <div className="min-w-41.5 min-h-[124.5px]"><EachSkill SkillImage={HTML} SkillImageMono={HTMLMono} /></div>
+            <div className="flex justify-center items-center h-full xl:h-screen my-14 sm:h-full">
+                <div className="grid grid-rows-5 grid-cols-2 xl:grid-cols-6 sm:grid-cols-3 xl:gap-4 gap-4 sm:gap-6 sm:w-[580px] xl:w-auto">
+                    <div className="min-w-41.5 min-h-[124.5px] xl:row-span-2 xl:col-span-4 sm:col-span-3 col-span-2"></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Github} SkillImageMono={GithubMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Git} SkillImageMono={GitMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Figma} SkillImageMono={FigmaMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:row-span-2 xl:block sm:hidden hidden"><EachSkill SkillImage={Python} SkillImageMono={PythonMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Cs} SkillImageMono={CsMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:row-span-2 xl:col-span-2 sm:col-span-2 sm:row-span-2 col-span-2 row-span-2"><EachSkill SkillImage={Unity} SkillImageMono={UnityMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:row-span-2 xl:col-span-2 block xl:block sm:hidden col-span-2 row-span-2"><EachSkill SkillImage={React} SkillImageMono={ReactMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Cpp} SkillImageMono={CppMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block sm:col-span-1 sm:row-span-2 xl:col-span-1 xl:row-span-1 block"><EachSkill SkillImage={Css} SkillImageMono={CssMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={C} SkillImageMono={CMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:col-span-2 xl:block sm:hidden hidden"><EachSkill SkillImage={Tailwind} SkillImageMono={TailwindMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Js} SkillImageMono={JsMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] xl:block xl:col-span-1 xl:row-span-1 sm:hidden hidden"><EachSkill SkillImage={Ts} SkillImageMono={TsMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:block xl:col-span-1 xl:row-span-1 sm:row-span-2 sm:col-span-1 block"><EachSkill SkillImage={HTML} SkillImageMono={HTMLMono} /></div>
+                    {/* Stuff */}
+                    <div className="min-w-41.5 min-h-[124.5px] sm:col-span-2 sm:row-span-2 sm:block xl:hidden hidden"><EachSkill SkillImage={React} SkillImageMono={ReactMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-3 hidden"><EachSkill SkillImage={Tailwind} SkillImageMono={TailwindMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1"><EachSkill SkillImage={Js} SkillImageMono={JsMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1"><EachSkill SkillImage={Ts} SkillImageMono={TsMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:hidden sm:col-span-3 block"><EachSkill SkillImage={Tailwind} SkillImageMono={TailwindMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1 hidden"><EachSkill SkillImage={Python} SkillImageMono={PythonMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:hidden sm:col-span-3 block"><EachSkill SkillImage={Figma} SkillImageMono={FigmaMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1"><EachSkill SkillImage={Github} SkillImageMono={GithubMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1"><EachSkill SkillImage={Git} SkillImageMono={GitMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1 hidden"><EachSkill SkillImage={Figma} SkillImageMono={FigmaMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:hidden sm:col-span-3 block"><EachSkill SkillImage={Python} SkillImageMono={PythonMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1"><EachSkill SkillImage={C} SkillImageMono={CMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1"><EachSkill SkillImage={Cpp} SkillImageMono={CppMono} /></div>
+                    <div className="min-w-41.5 min-h-[124.5px] sm:block xl:hidden sm:col-span-1"><EachSkill SkillImage={Cs} SkillImageMono={CsMono} /></div>
                 </div>
             </div>
             <hr />
