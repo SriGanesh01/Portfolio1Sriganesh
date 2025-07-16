@@ -3,16 +3,25 @@
 function EachProjectCard() {
     return (
         <>
-            <div className="flex">
-                <div className="font-primary text-[200px]">PROJECTS</div>
-                <div>
-                    <svg className='heart1' width="162" height="155" viewBox="0 0 162 155" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M162 154.932V53.4981C162 24.0706 138.144 0.214844 108.717 0.214844C79.2893 0.214844 53.5875 20.5852 53.5875 50.0127C24.16 50.0127 0.304321 72.2208 0.304321 101.648C0.304321 131.076 24.16 154.932 53.5875 154.932H162Z" fill="" />
-                    </svg>
-                </div>
-            </div>
-            <div>
+            <div className="min-w-88 w-88 h-88 border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/60 rounded-3xl px-[5px] pb-[4.5px] pt-[4.9px]">
+                <div className="h-full flex flex-col">
+                    <div className="h-[109%] bg-[#EAE7C7]/30 rounded-t-[14px] border-[3.2px]">
 
+                    </div>
+                    <div className="flex flex-col justify-between h-full">
+                        <div>
+                            <div>
+                                Terminal Emulator
+                            </div>
+                            <div>
+                                This is a Unity Asset to emulate a linux-like terminal with working commands for learning purposes
+                            </div>
+                        </div>
+                        <div>
+                            <button className="cursor-pointer px-3 py-2 w-32 bg-[#EAE7C7] text-black rounded-bl-[14px] rounded-tl-[2.5px] rounded-br-[2.5px]" type="button">Source</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
