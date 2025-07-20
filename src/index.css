@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 @import "tailwindcss";
 
@@ -9,6 +11,8 @@
     --font-primary: "Graduate", serif;
     --font-secondary: "Viga", sans-serif;
     --font-tretiary: "Victor Mono", monospace;
+    --font-alata: "Alata", sans-serif;
+    --font-ISans: "Instrument Sans", sans-serif;
     --font-handwritten1: "Nanum Brush Script", cursive;
 
     --color-primary: #EAE7C7;

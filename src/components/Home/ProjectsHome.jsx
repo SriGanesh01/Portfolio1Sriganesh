@@ -1,3 +1,5 @@
+
+
 import EachProjectCard from "./EachProjectCard";
 
 function ProjectsHome() {
@@ -13,11 +15,11 @@ function ProjectsHome() {
                     </div>
                 </div>
                 <div className="flex flex-wrap gap-4 mx-2">
-                    <EachProjectCard />
-                    <EachProjectCard />
-                    <EachProjectCard />
-                    <EachProjectCard />
-                    <EachProjectCard />
+                    <EachProjectCard listofthing={["Git", "Github", "Figma", "Python", "Cs"]} />
+                    <EachProjectCard listofthing={["Unity", "React", "Cpp", "Css"]} />
+                    <EachProjectCard listofthing={["C", "Tailwind"]} />
+                    <EachProjectCard listofthing={["Js", "Ts"]} />
+                    <EachProjectCard listofthing={["HTML", "Github"]} />
                     <EachProjectCard />
                 </div>
 
