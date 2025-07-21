@@ -32,6 +32,11 @@ body::-webkit-scrollbar {
     scrollbar-color: #EAE7C7;
 }
 
+.lika::-webkit-scrollbar {
+    display: none;
+
+}
+
 .heart1 {
     transform-origin: bottom right;
     overflow: visible;
@@ -203,6 +208,48 @@ body::-webkit-scrollbar {
     /* z-index: 26; */
 }
 
+/* @keyframes fadeout {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+} */
+
+.reductor {
+    /* transition: opacity 0.3s ease; */
+    animation: fadein 0.3s ease 0s forwards;
+    /* opacity: 100%; */
+}
+
+.increasor {
+    /* transition: opacity 0.3s ease; */
+    animation: fadeout 0.3s ease 0s forwards;
+    /* opacity: 0%; */
+}
+
+.reductori {
+    /* transition: opacity 1.3s ease; */
+    animation: fadein 1.3s ease 0s forwards;
+    /* opacity: 100%; */
+}
+
+.increasori {
+    /* transition: opacity 1.3s ease; */
+    animation: fadeout 1.3s ease 0s forwards;
+    /* opacity: 0%; */
+}
+
 @keyframes fadeout {
     0% {
         opacity: 100%;
@@ -220,13 +267,3 @@ body::-webkit-scrollbar {
         opacity: 100%;
     }
 }
-
-.cooltr {
-    
-}
-
-
-
-/* .spoon:hover.ncooltr {
-    z-index: 26
-} */
