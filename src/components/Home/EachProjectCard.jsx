@@ -9,6 +9,8 @@ import Terminal2 from '../../assets/Home/CardCaroselImages/Terminal2.png'
 import Terminal3 from '../../assets/Home/CardCaroselImages/Terminal3.png'
 import Terminal4 from '../../assets/Home/CardCaroselImages/Terminal4.png'
 import Terminal5 from '../../assets/Home/CardCaroselImages/Terminal5.png'
+
+import { Link } from 'react-router-dom';
 import { useState } from 'react'
 
 
@@ -95,18 +97,22 @@ function EachProjectCard({ listofthing = [], listofCarosell = [Terminal1, Termin
                                     <div className="font-ISans text-[22px] font-bold">
                                         Terminal Emulator
                                     </div>
-                                    <div className='flex items-center'>
-                                        <FaExternalLinkAlt />
+                                    <div className='flex items-center text-[16px]'>
+                                        <a href="#">
+                                            <FaExternalLinkAlt />
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="font-alata leading-none px-[1px]  text-[#EAE7C7]/50 text-[15.5px]">
+                                <div className="font-alata leading-none px-[1px] text-[#EAE7C7]/50 text-[15.5px]">
                                     This is a Unity Asset to emulate a linux-like terminal with working commands for learning purposes
                                 </div>
                             </div>
 
                         </div>
                         <div>
-                            <button className="flex justify-center items-center cursor-pointer px-3 py-[7px] w-32 h-8.5 bg-[#EAE7C7] text-black rounded-bl-[14px] rounded-tl-[2.5px] rounded-br-[2.5px]" type="button">Source</button>
+                            <a href="https://www.google.com" target='_blank'>
+                                <button className="flex justify-center items-center cursor-pointer px-3 py-[7px] w-32 h-8.5 bg-[#EAE7C7] text-black rounded-bl-[14px] rounded-tl-[2.5px] rounded-br-[2.5px]" type="button">Source</button>
+                            </a>
                         </div>
                     </div>
                 </div>
