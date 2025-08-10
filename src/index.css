@@ -267,3 +267,7 @@ body::-webkit-scrollbar {
         opacity: 100%;
     }
 }
+
+/* .moveaway {
+    transform: translateX(-400%)
+} */

@@ -16,11 +16,11 @@ function ProjectsHome() {
                 </div>
                 <div className="flex flex-wrap gap-4 mx-2">
                     <EachProjectCard listofthing={["Git", "Github", "Figma", "Python", "Cs"]} />
-                    <EachProjectCard listofthing={["Unity", "React", "Cpp", "Css"]} />
+                    {/* <EachProjectCard listofthing={["Unity", "React", "Cpp", "Css"]} />
                     <EachProjectCard listofthing={["C", "Tailwind"]} />
                     <EachProjectCard listofthing={["Js", "Ts"]} />
                     <EachProjectCard listofthing={["HTML", "Github"]} />
-                    <EachProjectCard />
+                    <EachProjectCard /> */}
                 </div>
 
 

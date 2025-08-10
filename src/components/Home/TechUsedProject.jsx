@@ -88,7 +88,7 @@ function TechUsedProject({element}) {
 
     return (
         <>
-            <div key={element} className="h-6 w-6 rounded-full bg-[#EAE7C7]/30 relative " onMouseEnter={() => SetHov(true)} onMouseOut={() => SetHov(false)}>
+            <div key={element} className="backdrop-blur-[1px] h-6 w-6 rounded-full bg-[#EAE7C7]/30 relative " onMouseEnter={() => SetHov(true)} onMouseOut={() => SetHov(false)}>
                 {/* {element} */}
                 <img ref={Fullchroma} className="absolute reductor" src={ColouredLogos[element]} alt={element} />
                 <img ref={Monochroma} className="absolute increasor" src={MonoLogos[element]} alt={element} />
