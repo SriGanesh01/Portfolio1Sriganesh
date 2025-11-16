@@ -4,17 +4,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-import Terminal1 from '../../assets/Home/CardCaroselImages/Terminal1.png'
-import Terminal2 from '../../assets/Home/CardCaroselImages/Terminal2.png'
-import Terminal3 from '../../assets/Home/CardCaroselImages/Terminal3.png'
-import Terminal4 from '../../assets/Home/CardCaroselImages/Terminal4.png'
-import Terminal5 from '../../assets/Home/CardCaroselImages/Terminal5.png'
-
-import { Link } from 'react-router-dom';
 import { useState } from 'react'
 
 
-function EachProjectCard({ listofthing = [], listofCarosell = [Terminal1, Terminal2, Terminal3, Terminal4, Terminal5] }) {
+function EachProjectCard({ listofthing = [], listofCarosell = [], title = "Placeholder project", description = "This is a Placeholder Description", source = "https://github.com/", redirect = "https://innovixity.com/" }) {
 
     const [ShownCarosel, SetShownCarosel] = useState(0)
     const [percent, Setpercent] = useState(100)
@@ -51,7 +44,7 @@ function EachProjectCard({ listofthing = [], listofCarosell = [Terminal1, Termin
 
     return (
         <>
-            <div className="min-w-88 w-88 h-88 border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl px-[5px] pb-[4.5px] pt-[4.9px]">
+            <div className="sm:mx-7 lg:mx-0 w-full min-w-[22rem] flex-1 h-88 max-[23.5rem]:min-w-75 max-[23.5rem]:w-75 max-[23.5rem]:h-88 border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl px-[5px] pb-[4.5px] pt-[4.9px]">
                 <div className="h-full flex flex-col">
                     <div className="h-[109%]  bg-[#EAE7C7]/30 rounded-t-[14px] border-[3.2px]  relative lika overflow-scroll ">
                         <div className='w-full max-h-[100%] object-contain overflow-clip absolute flex'>
@@ -83,9 +76,9 @@ function EachProjectCard({ listofthing = [], listofCarosell = [Terminal1, Termin
                                     <FaArrowLeftLong className={` ${(ShownCarosel > 0) ? "text-black" : "text-[#EAE7C7]"}`} />
                                 </div>
                             </div>
-                            <div className={`h-8 w-8 cursor-pointer rounded-full backdrop-blur-[1px] ${ShownCarosel != (listofthing.length - 1) ? "bg-[#EAE7C7]/94" : "bg-[#EAE7C7]/30"}`} onClick={() => Next()} >
+                            <div className={`h-8 w-8 cursor-pointer rounded-full backdrop-blur-[1px] ${ShownCarosel != (listofCarosell.length - 1) ? "bg-[#EAE7C7]/94" : "bg-[#EAE7C7]/30"}`} onClick={() => Next()} >
                                 <div className='flex h-full justify-center items-center'>
-                                    <FaArrowRightLong className={`${ShownCarosel != (listofthing.length - 1) ? "text-black" : "text-[#EAE7C7]"}`} />
+                                    <FaArrowRightLong className={`${ShownCarosel != (listofCarosell.length - 1) ? "text-black" : "text-[#EAE7C7]"}`} />
                                 </div>
                             </div>
                         </div>
@@ -95,22 +88,22 @@ function EachProjectCard({ listofthing = [], listofCarosell = [Terminal1, Termin
                             <div className="flex flex-col justify-around">
                                 <div className='flex justify-between h-full'>
                                     <div className="font-ISans text-[22px] font-bold">
-                                        Terminal Emulator
+                                        {title}
                                     </div>
-                                    <div className='flex items-center text-[16px]'>
-                                        <a href="#">
+                                    <div className='flex items-center text-[15px]'>
+                                        <a href={redirect}>
                                             <FaExternalLinkAlt />
                                         </a>
                                     </div>
                                 </div>
                                 <div className="font-alata leading-none px-[1px] text-[#EAE7C7]/50 text-[15.5px]">
-                                    This is a Unity Asset to emulate a linux-like terminal with working commands for learning purposes
+                                    {description}
                                 </div>
                             </div>
 
                         </div>
                         <div>
-                            <a href="https://www.google.com" target='_blank'>
+                            <a href={source} target='_blank'>
                                 <button className="flex justify-center items-center cursor-pointer px-3 py-[7px] w-32 h-8.5 bg-[#EAE7C7] text-black rounded-bl-[14px] rounded-tl-[2.5px] rounded-br-[2.5px]" type="button">Source</button>
                             </a>
                         </div>
