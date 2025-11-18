@@ -2,6 +2,7 @@
 import HeroHome from "../components/Home/HeroHome";
 import SkillsHome from "../components/Home/SkillsHome";
 import ProjectsHome from "../components/Home/ProjectsHome";
+import ExperiencesHome from "../components/Home/ExperiencesHome";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <HeroHome />
         <SkillsHome />
         <ProjectsHome />
+        <ExperiencesHome />
     </div>
   );
 }

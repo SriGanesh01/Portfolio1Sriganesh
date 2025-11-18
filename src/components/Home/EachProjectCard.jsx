@@ -44,7 +44,7 @@ function EachProjectCard({ listofthing = [], listofCarosell = [], title = "Place
 
     return (
         <>
-            <div className="sm:mx-7 lg:mx-0 w-full min-w-[22rem] flex-1 h-88 max-[23.5rem]:min-w-75 max-[23.5rem]:w-75 max-[23.5rem]:h-88 border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl px-[5px] pb-[4.5px] pt-[4.9px]">
+            <div className="sm:mx-7 lg:mx-0 w-full min-w-[21.5rem] flex-1 h-88 max-[23.5rem]:min-w-75 max-[23.5rem]:w-75 max-[23.5rem]:h-88 border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl px-[5px] pb-[4.5px] pt-[4.9px]">
                 <div className="h-full flex flex-col">
                     <div className="h-[109%]  bg-[#EAE7C7]/30 rounded-t-[14px] border-[3.2px]  relative lika overflow-scroll ">
                         <div className='w-full max-h-[100%] object-contain overflow-clip absolute flex'>

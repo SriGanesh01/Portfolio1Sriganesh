@@ -11,7 +11,7 @@ import Terminal5 from '../../assets/Home/CardCaroselImages/Terminal5.png'
 function ProjectsHome() {
     return (
         <>
-            <div className="w-screen flex flex-col items-center justify-center my-14">
+            <div className="w-screen flex flex-col items-center justify-center mt-14">
                 <div className="flex h-full w-screen justify-center items-center">
                     <div className="leading-none font-primary min-[72rem]:text-[185px] md:text-[150px] sm:text-[100px] text-[60px] pb-[-12px] pt-9 sm:pt-0">PROJECTS</div>
                     <div className="pr-4 leading-none mb-[-2px] lg:block sm:hidden hidden">
@@ -21,12 +21,16 @@ function ProjectsHome() {
                     </div>
                 </div>
                 <div className="h-full max-w-[1120px] flex gap-x-4 gap-y-5 flex-wrap justify-center items-center justify-items-center mx-8 pt-6">
-                    <EachProjectCard title="Terminal Emulator" description="This is a Unity Asset to emulate a linux-like terminal with working commands for learning purposes" source="https://github.com/" redirect="https://innovixity.com" listofthing={["Git", "Github", "Figma", "Python", "Cs"]} listofCarosell = {[Terminal1, Terminal2, Terminal3, Terminal4, Terminal5]} />
+                    <EachProjectCard title="Terminal Emulator" description="This is a Unity Asset to emulate a linux-like terminal with working commands for learning purposes" source="https://github.com/" redirect="https://innovixity.com" listofthing={["Git", "Github", "Figma", "Python", "Cs"]} listofCarosell={[Terminal1, Terminal2, Terminal3, Terminal4, Terminal5]} />
                     <EachProjectCard listofthing={["Unity", "React", "Cpp", "Css"]} />
                     <EachProjectCard listofthing={["C", "Tailwind"]} />
                     <EachProjectCard listofthing={["Js", "Ts"]} />
                     <EachProjectCard listofthing={["HTML", "Github"]} />
                     <EachProjectCard />
+
+                    <div className="flex w-full justify-end items-end justify-items-end mb-12">
+                        View More ---
+                    </div>
                 </div>
 
 
