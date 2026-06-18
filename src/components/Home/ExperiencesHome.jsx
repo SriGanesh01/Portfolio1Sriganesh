@@ -17,6 +17,8 @@ function ExperiencesHome() {
                     </div>
                 </div>
             </div>
+
+            <hr className="w-[100vw] ml-[calc(-50vw+50%)]"/>
         </>
     )
 }
