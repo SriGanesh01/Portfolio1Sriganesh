@@ -44,17 +44,17 @@ function EachProjectCard({ listofthing = [], listofCarosell = [], title = "Place
 
     return (
         <>
-            <div className="lg:mx-0 w-full min-w-[21.5rem] flex-1 h-88 max-[23.5rem]:min-w-75 max-[23.5rem]:w-75 max-[23.5rem]:h-88 border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl px-[5px] pb-[4.5px] pt-[4.9px]">
+            <div className="lg:mx-0 w-full min-w-[2rem] flex-1 h-88 border-[5px] bg-[#EAE7C7]/20 border-[#EAE7C7]/40 rounded-3xl px-[5px] pb-[4.5px] pt-[4.9px]">
                 <div className="h-full flex flex-col">
                     <div className="h-[109%]  bg-[#EAE7C7]/30 rounded-t-[14px] border-[3.2px]  relative lika overflow-scroll ">
-                        <div className='w-full max-h-[100%] object-contain overflow-clip absolute flex'>
+                        <div className='w-full h-full object-contain overflow-clip absolute flex'>
                             {
                                 listofCarosell.map((element) => {
                                     return (
                                         <img
                                             style={{ transform: `translateX(${-ShownCarosel * percent}%)` }}
 
-                                            className={`w-full object-cover overflow-cover transition-transform duration-1250 ease`} src={element} alt={element}
+                                            className={`w-full min-w-full shrink-0 object-cover overflow-cover transition-transform duration-1250 ease`} src={element} alt={element}
                                         />
                                     )
                                 }

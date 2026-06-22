@@ -171,15 +171,15 @@ function HeroHome() {
                     </div>
                 </div>
                 
-                <div className="max-[20.5rem]:mx-5 mt-5 mb-3 h-auto flex flex-col justify-between items-center">
+                <div className="max-[20.5rem]:mx-5 mt-5 mb-3 h-auto flex flex-col justify-between ">
                     <div className="flex flex-col  ">
-                        <div className="max-[20.5rem]:text-[28px] max-[20.5rem]:justify-normal flex font-secondary text-[32px] sm:hidden lg:flex lg:text-[37px] min-[72rem]:text-[50px] min-[79rem]:text-[62px]  ">Hello&#44; I&#39;m Sriganesh P</div>
+                        <div className="max-[23rem]:text-[28px] max-[23rem]:justify-normal flex font-secondary text-[32px] sm:hidden lg:flex lg:text-[37px] min-[72rem]:text-[50px] min-[79rem]:text-[62px]  ">Hello&#44; I&#39;m Sriganesh P</div>
                         <div className="max-[20.5rem]:ml-0 max-[20.5rem]:justify-normal flex lg:justify-normal lg:ml-0">
-                            <div className="max-[20.5rem]:text-[28px] max-[20.5rem]:justify-normal  font-tretiary font-extralight text-[30px] sm:text-[37px] lg:text-[38px] min-[72rem]:text-[42px] ">Unity & <br className="" /> React Developer</div>
+                            <div className="max-[20.5rem]:text-[24px] max-[20.5rem]:justify-normal  font-tretiary font-extralight text-[30px] sm:text-[37px] lg:text-[38px] min-[72rem]:text-[42px] ">Unity & <br className="" /> React Developer</div>
                         </div>
                         <br />
                         <div className="max-[20.5rem]:ml-0 max-[20.5rem]:justify-normal flex  gap-2 text-left lg:justify-normal ml-0 ">
-                            <div className="font-tretiary  font-thin text-[16px]">Based in Tamil Nadu&#44; India </div>
+                            <div className="font-tretiary  font-thin text-[12px] min-[20.5rem]:text-[16px]">Based in Tamil Nadu&#44; India </div>
                             <a className="" href="https://maps.app.goo.gl/DR8QozvhKgo4gNsp8" target="_blank" ><img className="-translate-y-[5px] h-6 tapping" src={Location} alt="" /></a>
                         </div>
                     </div>
