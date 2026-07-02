@@ -31,9 +31,9 @@ function ProjectsHome() {
 
                     
                 </div>
-                <div className="flex w-full justify-end items-end justify-items-end mb-12">
+                {/* <div className="flex w-full justify-end items-end justify-items-end mb-12">
                         View More ---
-                    </div>
+                    </div> */}
 
 
             </div>

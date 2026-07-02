@@ -189,7 +189,7 @@ function HeroHome() {
                             <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto " src={GitHub} alt="" target="_blank" /></a>
                             <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={Mail} alt="" target="_blank" /></a>
                             <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={Instagram} alt="" target="_blank" /></a>
-                            <a href="/CV_SRIGANESH_P_v5.pdf" target="_blank" download ><img ref={ResumePos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={Resume} alt="" /></a>
+                            <a href="/CV_SRIGANESH_P_v8.pdf" target="_blank" download ><img ref={ResumePos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={Resume} alt="" /></a>
                         </div>
                     </div>
                 </div>
